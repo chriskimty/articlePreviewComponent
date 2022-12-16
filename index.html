@@ -1,36 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Article preview component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Manrope:wght@500;700&display=swap"
+    rel="stylesheet">
+
+  <title>Article preview component</title>
+
+  <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
+  <main>
+    <section>
+      <div class="feature">
+        <div class="imageContainer">
+          <img src="./images/drawers.jpg" alt="green drawers">
+        </div> <!-- .imageContainer ends -->
+        <div class="textContainer">
+          <h3>Shift the overall look and feel by adding these wonderful
+            touches to furniture in your home</h3>
+          <p>Ever been in a room and felt like something was missing? Perhaps
+            it felt slightly bare and uninviting. I’ve got some simple tips
+            to help you make any room feel complete.</p>
+          <div class="authorContainer">
+            <div class="authorLeftContainer">
+              <div class="authorImg">
+                <img src="./images/avatar-michelle.jpg" alt="author's portrait">
+              </div> <!-- .authorImg ends -->
+              <div class="authorInfo">
+                <p class="authorName">Michelle Appleton</>
+                <p>28 Jun 2020</p>
+              </div> <!-- .authorInfo ends -->
+            </div>
+            <button>
+              <img src="./images/icon-share.svg" alt="share icon" class="shareIcon"></button>
+          </div> <!-- .authorContainer ends -->
+        </div><!-- .textContainer ends -->
+      </div><!-- .feature ends -->
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+      <div class="popUp">
+        <ul>
+          <li><span>share</span></li>
+          <li><img src="./images/icon-facebook.svg" alt="facebook icon"></li>
+          <li><img src="./images/icon-twitter.svg" alt="twitter icon"></li>
+          <li><img src="./images/icon-pinterest.svg" alt="pinterest icon"></li>
+        </ul>
+      </div> <!-- .popUp ends -->
+    </section>
+  </main>
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
-
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
-  
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Chris Kim</a>.
   </div>
+
+  <script src="app.js"></script>
 </body>
+
 </html>
